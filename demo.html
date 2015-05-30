@@ -30,7 +30,7 @@ input{width:150px;height:25px;border:solid 1px #ddd;}
 <script type="text/javascript" src="http://cdn.loveqiao.com/jquery.js"></script>
 <script>
 $(function(){
-	$('#signupForm').verify({
+	$('#signupForm').validate({
 		messages:{required:'此处不能为空',remote:'名字重复请重新输入'},
 		validate:{
 				remote:function(e){
@@ -47,7 +47,7 @@ $(function(){
  * 这种方法适用于ajax提交表单
  
 	$(提交按钮id).click(function(){
-		var b=$('#signupForm').verify({acticle:true}) 
+		var b=$('#signupForm').validate({acticle:true}) 
 		alert(b)
 	})
 	
@@ -55,7 +55,7 @@ $(function(){
 
 /*--表单验证/S--*/
 ;(function($){
-	$.fn.verify=function(options){
+	$.fn.validate=function(options){
 		//提交按钮状态
 		var submitBtn={
 			flag:false,
