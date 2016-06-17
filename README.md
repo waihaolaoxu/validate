@@ -1,6 +1,6 @@
 # validate
 jquery表单验证插件
-# 验证方法
+# 内置验证方法
 <ul>
 	<li>required：必填</li>
 	<li>email：邮箱</li>
@@ -10,14 +10,15 @@ jquery表单验证插件
 	<li>idcard：身份证号码（支持尾号为x字母）</li>
 </ul>
 # 使用方法
+html
 <pre>
 &lt;form action="" id="form"&gt;
 	&lt;input type="text" validate="required|phone"&gt;
 	&lt;input type="submit" value="提交"&gt;
 &lt;/form&gt;
 </pre>
+基础用法
 <pre>
-//基础用法
 $('#form').submit(function(){
 		var b=$(this).validate();
 		if(b){
@@ -27,8 +28,8 @@ $('#form').submit(function(){
 	})
 })
 </pre>
+扩展用法
 <pre>
-//扩展用法
 $('#form').submit(function(){
 		var b=$(this).validate({
 			//自定义错误回调
