@@ -11,10 +11,10 @@ jquery表单验证插件
 </ul>
 # 使用方法
 <pre>
-<form action="" id="form">
-	<input type="text" validate="required|phone">
-	<input type="submit" value="提交">
-</form>
+&lt;form action="" id="form"&gt;
+	&lt;input type="text" validate="required|phone"&gt;
+	&lt;input type="submit" value="提交"&gt;
+&lt;/form&gt;
 </pre>
 <pre>
 $('#form').submit(function(){
