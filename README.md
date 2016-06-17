@@ -50,7 +50,8 @@ $('#form').submit(function(){
 			},
 			submitBtn:{//开启按钮提交状态
 				flag:true,
-			}
+			},
+			isone:true //默认为批量验证，如想实现单条验证请设置isone：true
 		});
 		if(b){
 			alert('验证通过')
@@ -59,4 +60,5 @@ $('#form').submit(function(){
 	})
 })
 </pre>
+
 

@@ -10,7 +10,7 @@
 ;(function($){
 	$.fn.validate=function(options){
 		//是否批量验证
-		var vall=options.vall?true:false;
+		var isone=options.isone?true:false;
 		//提交按钮状态
 		var submitBtn={
 			flag:false,
@@ -107,8 +107,8 @@
 			$(this).find('[validate]').each(function(i, e) {
 			   if(check.call(e)==false){
 					success=false
-					if(vall){//批量验证开关
-						return false
+					if(isone){
+						return false //单条验证 默认为批量验证
 					}
 			   }
             });
