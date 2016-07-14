@@ -34,7 +34,8 @@ $('#form').submit(function(){
 		var b=$(this).validate({
 			//自定义错误回调
 			error:function(e,t){//接收两个参数 （当前对象，错误信息）
-				$(e).addClass("error").text(t);
+				$(e).addClass("error");
+				alert(t);
 			},
 			//扩展验证方法
 			validate:{
