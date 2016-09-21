@@ -104,14 +104,25 @@
 		}
 		function yanzheng(){
 			var success=true;
-			$(this).find('[validate]').each(function(i, e) {
-			   if(check.call(e)==false){
-					success=false
-					if(isone){
-						return false //单条验证 默认为批量验证
-					}
-			   }
-            });
+			if(typeof options.ids=='object'){
+				$.each(options.ids,function(i,e){
+					if(check.call(e)==false){
+						success=false
+						if(isone){
+							return false //单条验证 默认为批量验证
+						}
+				   	}
+				})
+			}else{
+				$(this).find('[validate]').each(function(i, e) {
+				   	if(check.call(e)==false){
+						success=false
+						if(isone){
+							return false //单条验证 默认为批量验证
+						}
+				   	}
+	            		});
+            		}
 			if(success){
 				if(submitBtn.flag){
 					submitBtn.id.val(submitBtn.txt)
