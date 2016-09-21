@@ -9,6 +9,15 @@ jquery表单验证插件
 	<li>url：url</li>
 	<li>idcard：身份证号码（支持尾号为x字母）</li>
 </ul>
+# 可选参数
+<ul>
+	<li>error：function</li>
+	<li>validate：object</li>
+	<li>messages：object</li>
+	<li>isone：Boolean</li>
+	<li>submitBtn：object</li>
+	<li>ids：Array</li>
+</ul>
 # 使用方法
 html
 <pre>
