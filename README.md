@@ -70,5 +70,18 @@ $('#form').submit(function(){
 	})
 })
 </pre>
+指定表单元素提交
+<pre>
+$('#form').submit(function(){
+		var b=$(this).validate({
+			ids:[$('#a'),$('#b')]
+		});
+		if(b){
+			alert('验证通过')
+		}
+		return false
+	})
+})
+</pre>
 
 
