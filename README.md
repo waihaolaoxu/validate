@@ -11,12 +11,12 @@ jquery表单验证插件
 </ul>
 # 可选参数
 <ul>
-	<li>error：function</li>
-	<li>validate：object</li>
-	<li>messages：object</li>
-	<li>isone：Boolean</li>
-	<li>submitBtn：object</li>
-	<li>ids：Array</li>
+	<li>error：function  错误信息（obj,err） 返回当前（jq对象，错误信息的key）</li>
+	<li>validate：object  设置自定义验证规则</li>
+	<li>messages：object  设置错误提示信息</li>
+	<li>isone：Boolean  开启单条验证默认为false</li>
+	<li>submitBtn：object  设置提交按钮提交状态</li>
+	<li>ids：Array  设置指定表单元素提交</li>
 </ul>
 # 使用方法
 html
