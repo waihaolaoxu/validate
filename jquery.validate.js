@@ -19,7 +19,7 @@
 		//验证规则
 		var validate={
 				required:function(e){
-					if(e.val()==''){
+					if(e.val()==''||e.val() == e.attr('placeholder')){
 						_error(e,'required');
 						return false
 					}
