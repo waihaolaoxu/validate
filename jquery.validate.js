@@ -82,7 +82,7 @@
 			}
 		}
 		//错误提示
-		_error=function(obj,error){
+		var _error=function(obj,error){
 			if(options&&options.error){
 				options.error(obj,messages[error]);
 				return
